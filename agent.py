@@ -1,4 +1,5 @@
 import gymnasium as gym
+import flappy_bird_gymnasium
 import torch
 import torch.nn as nn
 import torch.optim as optim

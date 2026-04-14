@@ -2,10 +2,12 @@ flappybirdv0:
   env_id: FlappyBird-v0
   epsilon_init: 1
   epsilon_min: 0.05
-  epsilon_decay: 0.9995
+  # Reaches min epsilon by episode 500
+  epsilon_decay: 0.994 
   replay_memory_size: 100000
-  mini_batch_size: 32
-  network_sync_rate: 10
-  alpha: 0.001
+  mini_batch_size: 64
+  network_sync_rate: 500
+  # Faster learning rate to match the fast decay
+  alpha: 0.0005 
   gamma: 0.99
   reward_threshold: 1000
